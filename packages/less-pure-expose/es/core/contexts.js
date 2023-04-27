@@ -1,6 +1,7 @@
+import * as Constants from './constants.js';
+
 const contexts = {};
 export default contexts;
-import * as Constants from './constants.js';
 
 const copyFromOriginal = function copyFromOriginal(original, destination, propertiesToCopy) {
     if (!original) { return; }

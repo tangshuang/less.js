@@ -18,7 +18,7 @@ import ParseTree from './parse-tree.js';
 import ImportManager from './import-manager.js';
 import Parse from './parse.js';
 import Render from './render.js';
-import { version } from '../../version.js';
+import { version } from './version.js';
 
 export default function(environment, fileManagers) {
     let sourceMapOutput, sourceMapBuilder, parseTree, importManager;

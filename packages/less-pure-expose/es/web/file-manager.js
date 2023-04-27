@@ -72,9 +72,9 @@ FileManager.prototype = Object.assign(new AbstractFileManager(), {
             filename = currentDirectory + filename;
         }
 
-        filename = options.ext ? this.tryAppendExtension(filename, options.ext) : filename;
-
         options = options || {};
+
+        filename = options.ext ? this.tryAppendExtension(filename, options.ext) : filename;
 
         // sheet may be set to the stylesheet for the initial load or a collection of properties including
         // some context variables for imports
