@@ -1,0 +1,61 @@
+{
+	"name": "less-pure-expose",
+	"version": "4.1.3",
+	"description": "Leaner CSS",
+	"main": "src/core/index.js",
+	"module": "src/core/index.js",
+	"browser": "src/web/index.js",
+	"author": {
+		"name": "tisontang",
+		"email": "mail@tangshuang.net"
+	},
+	"bugs": {
+		"url": "https://github.com/less/less.js/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/less/less.js.git"
+	},
+	"master": {
+		"url": "https://github.com/less/less.js/blob/master/",
+		"raw": "https://raw.githubusercontent.com/less/less.js/master/"
+	},
+	"license": "Apache-2.0",
+	"engines": {
+		"node": ">=6"
+	},
+	"keywords": [
+		"compile less",
+		"css nesting",
+		"css variable",
+		"css",
+		"gradients css",
+		"gradients css3",
+		"less compiler",
+		"less css",
+		"less mixins",
+		"less",
+		"less.js",
+		"lesscss",
+		"mixins",
+		"nested css",
+		"parser",
+		"preprocessor",
+		"bootstrap css",
+		"bootstrap less",
+		"style",
+		"styles",
+		"stylesheet",
+		"variables in css",
+		"css less"
+	],
+	"rawcurrent": "https://raw.github.com/less/less.js/v",
+	"sourcearchive": "https://github.com/less/less.js/archive/v",
+    "scripts": {
+        "build": "webpack"
+    },
+	"devDependencies": {
+		"webpack": "^5.81.0",
+		"webpack-cli": "^5.0.2"
+	}
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<script type="module">
+    // import createLessCompiler from '../es/web/index.js'
+    import createLessCompiler from '../dist/web.js'
+
+    (async function() {
+        // options: https://lesscss.org/usage/#using-less-in-the-browser-options
+        const options = {}
+        const less = createLessCompiler(options)
+        // renderOptions: https://lesscss.org/usage/#programmatic-usage
+        const renderOptions = {}
+        const lessText = `
+            @import "./var.less";
+
+            .a {
+                color: @primaryColor;
+
+                .b {
+                    font-size: 1.3em;
+                }
+            }
+        `;
+        const output = await less.render(lessText, renderOptions)
+        console.log(output)
+    } ());
+</script>
