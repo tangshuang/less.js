@@ -69,7 +69,7 @@ export default function(environment) {
                 rootFilename: currentFileInfo.rootFilename
             };
 
-            const fileManager = environment.getFileManager(path, currentFileInfo.currentDirectory, this.context, environment);
+            const fileManager = environment.getFileManager(path, currentFileInfo.currentDirectory, this.context, environment, this.context.syncImport);
 
             if (!fileManager) {
                 fileParsedFunc({ message: `Could not find a file-manager for ${path}` });
